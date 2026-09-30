@@ -1,0 +1,2 @@
+# LF everywhere: bin/ shebangs must stay LF-terminated on Windows checkouts too.
+* text=auto eol=lf
