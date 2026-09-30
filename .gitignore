@@ -1,0 +1,18 @@
+node_modules/
+*.log
+logs/
+.env
+.env.*
+# local tool state (ruflo / claude-flow), not project source
+.claude-flow/
+# raw request dumps (KRUN_DUMP_DIR) contain prompts
+dump/
+dumps/
+*.dump.json
+# eval runs; keep only the committed baseline
+eval/reports/*
+!eval/reports/baseline*
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tgz

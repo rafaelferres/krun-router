@@ -1,0 +1,13 @@
+{"id":"e-still-fails","prompt":"that didn't work, the test still fails","rejects":true}
+{"id":"e-wrong-total","prompt":"no, that's wrong, the total should include tax","rejects":true}
+{"id":"e-same-error","prompt":"still getting the same error","rejects":true}
+{"id":"e-broke-login","prompt":"you broke the login page","rejects":true}
+{"id":"e-not-asked","prompt":"this is not what I asked for","rejects":true}
+{"id":"e-thanks","prompt":"thanks, looks good","rejects":false}
+{"id":"e-next-task","prompt":"now add pagination to the list","rejects":false}
+{"id":"e-run-tests","prompt":"run the tests","rejects":false}
+{"id":"e-go-ahead","prompt":"ok go ahead","rejects":false}
+{"id":"e-first-report","prompt":"fix the failing test","rejects":false}
+{"id":"e-question","prompt":"why is this slow?","rejects":false}
+{"id":"e-commit","prompt":"great, commit it","rejects":false}
+{"id":"e-continue-after-fail","prompt":"continue","rejects":false,"context":{"turns":6,"lastToolFailed":true}}

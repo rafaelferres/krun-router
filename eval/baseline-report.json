@@ -1,0 +1,3564 @@
+{
+  "at": "2026-09-30T18:21:04.856Z",
+  "current": "large",
+  "runs": [
+    {
+      "variant": "baseline",
+      "family": "claude",
+      "summary": {
+        "cases": 62,
+        "errors": 0,
+        "rateLimitRetries": 2,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "abstentionRate": 100,
+        "advisoryRate": 100,
+        "decidedAccuracy": 0,
+        "top1Accuracy": 59.7,
+        "latencyMs": {
+          "p50": 391,
+          "p95": 531
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 131.3,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 56.5,
+            "waste": 0,
+            "risk": 43.5,
+            "wastedCost": -53.7,
+            "relativeCost": 20
+          },
+          "krun as-is": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 131.3,
+            "relativeCost": 100
+          },
+          "advisory >= 0.1": {
+            "accuracy": 45.2,
+            "waste": 45.2,
+            "risk": 9.7,
+            "wastedCost": 89.6,
+            "relativeCost": 81.9
+          },
+          "advisory >= 0.2": {
+            "accuracy": 40.3,
+            "waste": 51.6,
+            "risk": 8.1,
+            "wastedCost": 100,
+            "relativeCost": 86.5
+          },
+          "advisory >= 0.3": {
+            "accuracy": 37.1,
+            "waste": 56.5,
+            "risk": 6.5,
+            "wastedCost": 109,
+            "relativeCost": 90.3
+          },
+          "advisory >= 0.4": {
+            "accuracy": 40.3,
+            "waste": 58.1,
+            "risk": 1.6,
+            "wastedCost": 122.4,
+            "relativeCost": 96.1
+          },
+          "advisory >= 0.5": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 128.4,
+            "relativeCost": 98.7
+          },
+          "advisory >= 0.6": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 128.4,
+            "relativeCost": 98.7
+          },
+          "krun top-1": {
+            "accuracy": 59.7,
+            "waste": 27.4,
+            "risk": 12.9,
+            "wastedCost": 62.7,
+            "relativeCost": 70.3
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "q-git-undo",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 1022,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.027425,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-regex",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 995,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-flag",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 486,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.115376,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-explain-fn",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 531,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.094853,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-diff-map",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 372,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.007225,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-port",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 493,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.112378,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-typo",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 354,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.007135,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-rename-var",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.00771,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-rename-fn",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 350,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.038341,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-add-log",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 468,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-bump-dep",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 459,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.014159,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-gitignore",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-format",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-comment",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 403,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.164939,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-run-tests",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 422,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.22353,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-commit",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 404,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.293173,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-const",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 429,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.021671,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-readme-section",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.092399,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-off-by-one",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.322061,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-null-check",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 362,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.120956,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-failing-test-known",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.093726,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-import-error",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 426,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.008239,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-css",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 445,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.017077,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-sql",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 552,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.284149,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-flaky",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.082613,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-memory-leak",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 387,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.319377,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-race",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 412,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.067158,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-deadlock",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 395,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.381607,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-heisenbug",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 425,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.086568,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-perf-regression",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 440,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.231666,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-endpoint",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 417,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.037679,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-cli-flag",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 361,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.206727,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-validation",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 410,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.147962,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-pagination-api",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 364,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.174866,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-caching",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 368,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.086395,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-oauth",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 390,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.382878,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-offline-sync",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.202408,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-extract-module",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 411,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.106696,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-callbacks-async",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 351,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.114805,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-ts-migration",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 368,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-multi-file",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.095946,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-architecture",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 377,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.455041,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-event-sourcing",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.321914,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-api-design",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 383,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.38553,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-db-schema",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.609615,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-review-auth",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 426,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.191734,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-sqli",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 389,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-haiku-4-5-20251001",
+          "topTier": "small",
+          "confidence": 0.007135,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-secrets",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 375,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.009631,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-n-plus-one",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.211723,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-algorithm",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 377,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.37414,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-bundle",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 413,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.038972,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-explain-codebase",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.683124,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-write-tests",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 405,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.090678,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-docs",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 457,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-opus-5-5",
+          "topTier": "large",
+          "confidence": 0.065374,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-fix-failing",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 352,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-fable-5-1",
+          "topTier": "large",
+          "confidence": 0.035821,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-fix-failing-ctx",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 350,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-fable-5-1",
+          "topTier": "large",
+          "confidence": 0.035821,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-continue",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.413666,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-continue-ctx",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 385,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.413666,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-yes",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 354,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.388675,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-still-broken",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 377,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-fable-5-1",
+          "topTier": "large",
+          "confidence": 0.020732,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-do-it",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.456328,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-pt",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 374,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "claude-sonnet-5-5",
+          "topTier": "medium",
+          "confidence": 0.331709,
+          "abstain": true,
+          "status": "advisory"
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "family": "codex",
+      "summary": {
+        "cases": 62,
+        "errors": 0,
+        "rateLimitRetries": 35,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "abstentionRate": 100,
+        "advisoryRate": 100,
+        "decidedAccuracy": 0,
+        "top1Accuracy": 56.5,
+        "latencyMs": {
+          "p50": 385,
+          "p95": 506
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 160.1,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 56.5,
+            "waste": 0,
+            "risk": 43.5,
+            "wastedCost": -56.6,
+            "relativeCost": 16.7
+          },
+          "krun as-is": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 160.1,
+            "relativeCost": 100
+          },
+          "advisory >= 0.1": {
+            "accuracy": 43.5,
+            "waste": 50,
+            "risk": 6.5,
+            "wastedCost": 121,
+            "relativeCost": 84.9
+          },
+          "advisory >= 0.2": {
+            "accuracy": 38.7,
+            "waste": 56.5,
+            "risk": 4.8,
+            "wastedCost": 143.4,
+            "relativeCost": 93.5
+          },
+          "advisory >= 0.3": {
+            "accuracy": 40.3,
+            "waste": 56.5,
+            "risk": 3.2,
+            "wastedCost": 151,
+            "relativeCost": 96.5
+          },
+          "advisory >= 0.4": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 158,
+            "relativeCost": 99.2
+          },
+          "advisory >= 0.5": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 158,
+            "relativeCost": 99.2
+          },
+          "advisory >= 0.6": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 158,
+            "relativeCost": 99.2
+          },
+          "krun top-1": {
+            "accuracy": 56.5,
+            "waste": 25.8,
+            "risk": 17.7,
+            "wastedCost": 36.4,
+            "relativeCost": 52.4
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "q-git-undo",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 372,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.020175,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-regex",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.019899,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-flag",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 630,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.120415,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-explain-fn",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 423,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.027268,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-diff-map",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 390,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.01826,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-port",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 506,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.19615,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-typo",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 466,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.018418,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-rename-var",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 405,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.046595,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-rename-fn",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 407,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.169107,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-add-log",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 386,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.027268,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-bump-dep",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 395,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.075369,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-gitignore",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 410,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.009012,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-format",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.055197,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-comment",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "retries": 2,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.047355,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-run-tests",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 385,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.17368,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-commit",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 375,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.065716,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-const",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 386,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-readme-section",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 387,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.255838,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-off-by-one",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 384,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.036977,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-null-check",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.019473,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-failing-test-known",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 382,
+          "retries": 3,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.019031,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-import-error",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.097749,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-css",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 448,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.135945,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-sql",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 397,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.19615,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-flaky",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 372,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.095584,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-memory-leak",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 407,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.009326,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-race",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 401,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.128031,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-deadlock",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 385,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.148488,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-heisenbug",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 353,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.039217,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-perf-regression",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 403,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.074762,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-endpoint",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 339,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.046977,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-cli-flag",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.307351,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-validation",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 392,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.117956,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-pagination-api",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 338,
+          "retries": 2,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.043544,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-caching",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 335,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.306429,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-oauth",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 366,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.175796,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-offline-sync",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 365,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.241978,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-extract-module",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.019031,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-callbacks-async",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 385,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.009628,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-ts-migration",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 394,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.019327,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-multi-file",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 395,
+          "retries": 2,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.239288,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-architecture",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.021019,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-event-sourcing",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 366,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.043546,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-api-design",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 369,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.03622,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-db-schema",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.014469,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-review-auth",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 347,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.509086,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-sqli",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 352,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.038819,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-secrets",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 387,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.08508,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-n-plus-one",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "retries": 3,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.096435,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-algorithm",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 382,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.306022,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-bundle",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.01888,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-explain-codebase",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.84599,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-write-tests",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 446,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.137703,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-docs",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 369,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.067283,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-fix-failing",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 359,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.047729,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-fix-failing-ctx",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 715,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.047729,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-continue",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 341,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.028709,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-continue-ctx",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 364,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.028709,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-yes",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 408,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.181436,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-still-broken",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 352,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-astra",
+          "topTier": "large",
+          "confidence": 0.004634,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-do-it",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 333,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6.1-sol",
+          "topTier": "medium",
+          "confidence": 0.114383,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-pt",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 560,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "gpt-6-luna",
+          "topTier": "small",
+          "confidence": 0.068899,
+          "abstain": true,
+          "status": "advisory"
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "family": "kimi",
+      "summary": {
+        "cases": 62,
+        "errors": 0,
+        "rateLimitRetries": 31,
+        "timeouts": 0,
+        "overDeadline": 1,
+        "abstentionRate": 100,
+        "advisoryRate": 100,
+        "decidedAccuracy": 0,
+        "top1Accuracy": 56.5,
+        "latencyMs": {
+          "p50": 363,
+          "p95": 530
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 56.5,
+            "waste": 0,
+            "risk": 43.5,
+            "wastedCost": -36.7,
+            "relativeCost": 33.3
+          },
+          "krun as-is": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "advisory >= 0.1": {
+            "accuracy": 40.3,
+            "waste": 58.1,
+            "risk": 1.6,
+            "wastedCost": 85.7,
+            "relativeCost": 97.8
+          },
+          "advisory >= 0.2": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "advisory >= 0.3": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "advisory >= 0.4": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "advisory >= 0.5": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "advisory >= 0.6": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "wastedCost": 89.8,
+            "relativeCost": 100
+          },
+          "krun top-1": {
+            "accuracy": 56.5,
+            "waste": 33.9,
+            "risk": 9.7,
+            "wastedCost": 44.9,
+            "relativeCost": 76.3
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "q-git-undo",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.009171,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-regex",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 14011,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-flag",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 340,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.009092,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-explain-fn",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 355,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.018102,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-diff-map",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 419,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "q-port",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 349,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.018418,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-typo",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 325,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-rename-var",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 350,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.009092,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-rename-fn",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 331,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-add-log",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 330,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-bump-dep",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 372,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.009403,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-gitignore",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-format",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 368,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.018102,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-comment",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 335,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-run-tests",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 426,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.009479,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-commit",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.036507,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-const",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 403,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.01826,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "t-readme-section",
+          "accept": [
+            "small"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.009092,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-off-by-one",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 328,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-null-check",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 361,
+          "retries": 3,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.027268,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-failing-test-known",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 343,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009012,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-import-error",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 403,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009092,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-css",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 337,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.027739,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-sql",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 348,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.027505,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-flaky",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 326,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009092,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-memory-leak",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 336,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.018727,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-race",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 324,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-deadlock",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.03744,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-heisenbug",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 366,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.055662,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "b-perf-regression",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 336,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009092,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-endpoint",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 331,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.009012,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-cli-flag",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.018102,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-validation",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 336,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-pagination-api",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 357,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.027739,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-caching",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 363,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.028428,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-oauth",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.055197,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "f-offline-sync",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 321,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.036821,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-extract-module",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 554,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-callbacks-async",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 333,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.01826,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-ts-migration",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 379,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.027268,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "r-multi-file",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "retries": 2,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.055662,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-architecture",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 357,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.245655,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-event-sourcing",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 398,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.192053,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-api-design",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 530,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.038344,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "a-db-schema",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.105469,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-review-auth",
+          "accept": [
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.027505,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-sqli",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.01826,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "s-secrets",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "retries": 3,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-n-plus-one",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 406,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009249,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-algorithm",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 436,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "p-bundle",
+          "accept": [
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 361,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.009012,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-explain-codebase",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 358,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.153275,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-write-tests",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 399,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.075369,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "x-docs",
+          "accept": [
+            "small",
+            "medium"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 372,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.018102,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-fix-failing",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 331,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009012,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-fix-failing-ctx",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 327,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.009012,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-continue",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "retries": 1,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.117115,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-continue-ctx",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 345,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-turbo",
+          "topTier": "small",
+          "confidence": 0.117115,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-yes",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 397,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.048099,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-still-broken",
+          "accept": [
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2.5",
+          "topTier": "medium",
+          "confidence": 0.027505,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-do-it",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 353,
+          "retries": 2,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.051556,
+          "abstain": true,
+          "status": "advisory"
+        },
+        {
+          "id": "amb-pt",
+          "accept": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "ok": true,
+          "error": null,
+          "latencyMs": 762,
+          "retries": 0,
+          "choice": null,
+          "choiceTier": null,
+          "top": "kimi-k2-thinking",
+          "topTier": "large",
+          "confidence": 0.01826,
+          "abstain": true,
+          "status": "advisory"
+        }
+      ]
+    }
+  ]
+}

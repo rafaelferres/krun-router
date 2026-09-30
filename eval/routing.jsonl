@@ -1,0 +1,62 @@
+{"id":"q-git-undo","prompt":"how do I undo the last git commit but keep the changes?","accept":["small","medium"]}
+{"id":"q-regex","prompt":"what does the regex ^\\d{3}-\\d{4}$ match?","accept":["small"]}
+{"id":"q-flag","prompt":"what flag makes npm install skip devDependencies?","accept":["small"]}
+{"id":"q-explain-fn","prompt":"what does the parseAnswer function in src/krun-client.mjs do?","accept":["small","medium"]}
+{"id":"q-diff-map","prompt":"difference between Array.map and Array.forEach in JS?","accept":["small"]}
+{"id":"q-port","prompt":"which port does the dev server listen on in this repo?","accept":["small"]}
+{"id":"t-typo","prompt":"fix the typo 'recieve' -> 'receive' in README.md","accept":["small"]}
+{"id":"t-rename-var","prompt":"rename the variable `tmp` to `tempDir` in src/log.mjs","accept":["small"]}
+{"id":"t-rename-fn","prompt":"rename getUserData to fetchUserProfile everywhere in the codebase and update the imports","accept":["small","medium"]}
+{"id":"t-add-log","prompt":"add a console.log of the request url at the top of the handler in server.js","accept":["small"]}
+{"id":"t-bump-dep","prompt":"bump lodash to the latest 4.x in package.json","accept":["small"]}
+{"id":"t-gitignore","prompt":"add .env and dist/ to .gitignore","accept":["small"]}
+{"id":"t-format","prompt":"run prettier on the src folder","accept":["small"]}
+{"id":"t-comment","prompt":"add a JSDoc comment to the exported functions in src/catalog.mjs","accept":["small","medium"]}
+{"id":"t-run-tests","prompt":"run the test suite and tell me if anything fails","accept":["small","medium"]}
+{"id":"t-commit","prompt":"commit these changes with a good message","accept":["small"]}
+{"id":"t-const","prompt":"extract the magic number 5000 in src/config.mjs into a named constant","accept":["small"]}
+{"id":"t-readme-section","prompt":"add an Installation section to the README with the npm install command","accept":["small"]}
+{"id":"b-off-by-one","prompt":"the pagination skips the last item on each page, fix the off-by-one in paginate()","accept":["small","medium"]}
+{"id":"b-null-check","prompt":"TypeError: Cannot read properties of undefined (reading 'id') in UserCard.tsx line 42, fix it","accept":["small","medium"]}
+{"id":"b-failing-test-known","prompt":"test 'parses dates in UTC' fails because the fixture uses local time; fix the test","accept":["small","medium"]}
+{"id":"b-import-error","prompt":"ERR_MODULE_NOT_FOUND for ./utils after I moved the file to lib/, fix the imports","accept":["small","medium"]}
+{"id":"b-css","prompt":"the submit button overflows its container on mobile, fix the CSS","accept":["small","medium"]}
+{"id":"b-sql","prompt":"this query returns duplicate rows since I added the JOIN on orders; fix it without changing the result columns","accept":["medium"]}
+{"id":"b-flaky","prompt":"the integration test for the upload endpoint fails about 1 in 5 runs in CI but never locally; find out why and fix it","accept":["medium","large"]}
+{"id":"b-memory-leak","prompt":"the node service's memory grows by ~200MB per hour in production until it's OOM-killed; find the leak","accept":["large"]}
+{"id":"b-race","prompt":"Investigate a race condition between the queue consumer and the worker pool: sometimes a job is processed twice after a restart.","accept":["large"]}
+{"id":"b-deadlock","prompt":"under load the payments service hangs with all DB connections checked out; diagnose the deadlock across the transfer and refund code paths","accept":["large"]}
+{"id":"b-heisenbug","prompt":"the websocket reconnect logic drops messages only when the laptop sleeps and wakes; figure out the root cause","accept":["large"]}
+{"id":"b-perf-regression","prompt":"p95 latency of /search went from 120ms to 900ms after last week's deploy; find the regression","accept":["medium","large"]}
+{"id":"f-endpoint","prompt":"add a GET /health endpoint that returns {status:'ok'} to the express app","accept":["small","medium"]}
+{"id":"f-cli-flag","prompt":"add a --verbose flag to the CLI that prints debug logs","accept":["small","medium"]}
+{"id":"f-validation","prompt":"add input validation with zod to the signup form handler and return field errors","accept":["medium"]}
+{"id":"f-pagination-api","prompt":"add cursor-based pagination to the /orders API, including tests","accept":["medium"]}
+{"id":"f-caching","prompt":"add an LRU cache in front of the pricing service client with a 5 minute TTL and metrics","accept":["medium"]}
+{"id":"f-oauth","prompt":"implement Google OAuth login with PKCE in the Next.js app, store sessions server-side, and protect the /dashboard routes","accept":["medium","large"]}
+{"id":"f-offline-sync","prompt":"design and implement offline-first sync for the mobile app's notes with conflict resolution when two devices edit the same note","accept":["large"]}
+{"id":"r-extract-module","prompt":"split src/server.js (1200 lines) into routes, services and db modules without changing behavior","accept":["medium","large"]}
+{"id":"r-callbacks-async","prompt":"convert the callback-based fs code in scripts/ to async/await","accept":["small","medium"]}
+{"id":"r-ts-migration","prompt":"migrate the whole src/ directory from JavaScript to TypeScript with strict mode and fix all type errors","accept":["large"]}
+{"id":"r-multi-file","prompt":"refactor the payment providers (stripe, paypal, adyen) behind a common interface and update all call sites across the codebase","accept":["medium","large"]}
+{"id":"a-architecture","prompt":"we need multi-tenancy for our SaaS: propose an architecture (row-level vs schema-per-tenant), migration plan from the current single-tenant DB and risks","accept":["large"]}
+{"id":"a-event-sourcing","prompt":"should we move the order system to event sourcing? analyze tradeoffs for our current Postgres + REST setup and outline a plan","accept":["large"]}
+{"id":"a-api-design","prompt":"design the public REST API for our webhooks product: resources, versioning, retries, signing","accept":["medium","large"]}
+{"id":"a-db-schema","prompt":"design a schema for a booking system with recurring reservations and timezone-correct availability","accept":["medium","large"]}
+{"id":"s-review-auth","prompt":"do a security review of the auth middleware and session handling; look for token leakage, CSRF and privilege escalation","accept":["large"]}
+{"id":"s-sqli","prompt":"check this endpoint for SQL injection and fix it if needed","accept":["small","medium"]}
+{"id":"s-secrets","prompt":"scan the repo for hardcoded secrets","accept":["small","medium"]}
+{"id":"p-n-plus-one","prompt":"the orders page makes 300 queries per request, fix the N+1 in the ORM code","accept":["medium"]}
+{"id":"p-algorithm","prompt":"our dedupe step is O(n^2) and takes 40 minutes on 2M records; rewrite it to be fast and prove it is equivalent","accept":["medium","large"]}
+{"id":"p-bundle","prompt":"reduce the frontend bundle size, it's 4MB","accept":["medium"]}
+{"id":"x-explain-codebase","prompt":"explain how a request flows through this codebase from the HTTP handler to the database","accept":["medium","large"]}
+{"id":"x-write-tests","prompt":"write unit tests for src/policy.mjs covering all branches","accept":["small","medium"]}
+{"id":"x-docs","prompt":"write a CONTRIBUTING.md for this repo","accept":["small","medium"]}
+{"id":"amb-fix-failing","prompt":"fix the failing test","accept":["small","medium","large"]}
+{"id":"amb-fix-failing-ctx","prompt":"fix the failing test","context":{"turns":14,"lastToolFailed":true,"tools":["Bash","Edit","Read"]},"accept":["medium","large"]}
+{"id":"amb-continue","prompt":"continue","accept":["small","medium","large"]}
+{"id":"amb-continue-ctx","prompt":"continue","context":{"turns":22,"lastToolFailed":false,"tools":["Edit","Bash"]},"accept":["medium","large"]}
+{"id":"amb-yes","prompt":"yes","accept":["small","medium","large"]}
+{"id":"amb-still-broken","prompt":"still broken","context":{"turns":9,"lastToolFailed":true,"tools":["Bash"]},"accept":["medium","large"]}
+{"id":"amb-do-it","prompt":"ok do it","accept":["small","medium","large"]}
+{"id":"amb-pt","prompt":"arruma o bug do login","accept":["small","medium","large"]}

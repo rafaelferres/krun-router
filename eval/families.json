@@ -1,0 +1,28 @@
+{
+  "_note": "Candidate sets per provider family, snapshotted from the real catalogs (Claude Code model-catalog cache and Codex models cache, 2026-09-30). Kimi ids are the adapter's test ids (unverified against the live Moonshot /models). tier: small < medium < large. cost: relative price per tier, used for waste and relative-cost figures (rough list-price ratios; tune freely).",
+  "claude": {
+    "cost": { "small": 1, "medium": 3, "large": 5 },
+    "models": [
+      { "tier": "large", "id": "claude-opus-5-5", "provider": "anthropic", "displayName": "Opus 5.5", "description": "For complex work and everyday tasks", "capabilities": { "reasoning": true, "vision": true, "tools": true, "efforts": ["low", "medium", "high", "xhigh", "max"] } },
+      { "tier": "large", "id": "claude-fable-5-1", "provider": "anthropic", "displayName": "Fable 5.1", "description": "For your toughest challenges", "capabilities": { "reasoning": true, "vision": true, "tools": true, "efforts": ["low", "medium", "high", "xhigh", "max"] } },
+      { "tier": "medium", "id": "claude-sonnet-5-5", "provider": "anthropic", "displayName": "Sonnet 5.5", "description": "Most efficient for simpler tasks", "capabilities": { "reasoning": true, "vision": true, "tools": true, "efforts": ["low", "medium", "high", "xhigh", "max"] } },
+      { "tier": "small", "id": "claude-haiku-4-5-20251001", "provider": "anthropic", "displayName": "Haiku 4.5", "description": "Fastest for quick answers", "capabilities": { "reasoning": false, "vision": true, "tools": true, "efforts": [] } }
+    ]
+  },
+  "codex": {
+    "cost": { "small": 1, "medium": 3, "large": 6 },
+    "models": [
+      { "tier": "medium", "id": "gpt-6.1-sol", "provider": "openai", "displayName": "gpt-6.1-sol", "description": "Latest workhorse model for coding and everyday work.", "contextWindow": 272000, "capabilities": { "reasoning": true, "vision": true, "tools": true, "efforts": ["low", "medium", "high", "xhigh", "max", "ultra"] } },
+      { "tier": "large", "id": "gpt-6-astra", "provider": "openai", "displayName": "gpt-6-astra", "description": "Frontier intelligence for the most demanding work.", "contextWindow": 272000, "capabilities": { "reasoning": true, "vision": true, "tools": true, "efforts": ["low", "medium", "high", "xhigh", "max", "ultra"] } },
+      { "tier": "small", "id": "gpt-6-luna", "provider": "openai", "displayName": "gpt-6-luna", "description": "Fast and affordable model for easier tasks.", "contextWindow": 272000, "capabilities": { "reasoning": true, "vision": true, "tools": true, "efforts": ["low", "medium", "high", "xhigh", "max"] } }
+    ]
+  },
+  "kimi": {
+    "cost": { "small": 1, "medium": 2, "large": 3 },
+    "models": [
+      { "tier": "medium", "id": "kimi-k2.5", "provider": "moonshot", "displayName": "kimi-k2.5", "description": "", "contextWindow": 262144, "capabilities": { "reasoning": true, "vision": true, "tools": true } },
+      { "tier": "small", "id": "kimi-k2-turbo", "provider": "moonshot", "displayName": "kimi-k2-turbo", "description": "", "contextWindow": 131072, "capabilities": { "reasoning": false, "tools": true } },
+      { "tier": "large", "id": "kimi-k2-thinking", "provider": "moonshot", "displayName": "kimi-k2-thinking", "description": "", "contextWindow": 262144, "capabilities": { "reasoning": true, "tools": true } }
+    ]
+  }
+}

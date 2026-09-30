@@ -1,0 +1,16 @@
+{"id":"h-regex","prompt":"what regex matches an ISO date like 2026-09-30?","accept":["small"]}
+{"id":"h-docker-logs","prompt":"show me the logs of the api container","accept":["small"]}
+{"id":"h-env-example","prompt":"add REDIS_URL to .env.example","accept":["small"]}
+{"id":"h-lint-fix","prompt":"run eslint --fix on the whole project","accept":["small"]}
+{"id":"h-null-check","prompt":"getInvoice crashes with 'cannot read properties of undefined (reading total)' when the invoice has no items, fix it","accept":["small","medium"]}
+{"id":"h-csv-export","prompt":"add a CSV export button to the orders table that downloads the current filter results","accept":["medium"]}
+{"id":"h-retry","prompt":"add exponential backoff retries to the payment client for 5xx responses, with tests","accept":["medium"]}
+{"id":"h-slow-endpoint","prompt":"the /reports endpoint takes 8 seconds, find out why and speed it up","accept":["medium","large"]}
+{"id":"h-auth-flow","prompt":"walk me through how login and session refresh work in this app","accept":["medium"]}
+{"id":"h-multitenant","prompt":"we need to make the whole app multi-tenant with per-tenant data isolation; propose the approach and start the migration","accept":["large"]}
+{"id":"h-leak","prompt":"memory grows by ~50MB an hour in the worker process until it gets OOM-killed, find the leak","accept":["large"]}
+{"id":"h-jwt-review","prompt":"audit our JWT validation and refresh token rotation for vulnerabilities","accept":["large"]}
+{"id":"h-py-to-go","prompt":"port the ingestion service from Python to Go, keeping the same behavior","accept":["large"]}
+{"id":"h-sharding","prompt":"design a sharding strategy for the events table that's now 2 billion rows","accept":["large"]}
+{"id":"h-ok","prompt":"ok go ahead","accept":["small","medium","large"]}
+{"id":"h-typo-readme","prompt":"there's a typo in the README install section, fix it","accept":["small"]}

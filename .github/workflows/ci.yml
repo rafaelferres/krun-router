@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Node ${{ matrix.node }} · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        # 22 is the engines minimum; lts/* and current catch newer runtime changes.
+        node: ["22", lts/*, current]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      # bash expands the glob itself: `node --test "<glob>"` needs Node 21+.
+      # Live tests (test/live) are never run in CI.
+      - run: node --test test/*.test.mjs
+        shell: bash

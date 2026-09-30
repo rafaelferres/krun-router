@@ -1,0 +1,2735 @@
+{
+  "at": "2026-09-30T18:58:18.767Z",
+  "current": "large",
+  "runs": [
+    {
+      "variant": "kinds",
+      "set": "routing",
+      "family": "claude",
+      "summary": {
+        "cases": 62,
+        "errors": 0,
+        "rateLimitRetries": 0,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "latencyMs": {
+          "p50": 398,
+          "p95": 558
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 56.5,
+            "waste": 0,
+            "risk": 43.5,
+            "relativeCost": 20
+          },
+          "krun economy": {
+            "accuracy": 77.4,
+            "waste": 3.2,
+            "risk": 19.4,
+            "relativeCost": 45.8
+          },
+          "krun balanced": {
+            "accuracy": 93.5,
+            "waste": 3.2,
+            "risk": 3.2,
+            "relativeCost": 60
+          },
+          "krun quality": {
+            "accuracy": 67.7,
+            "waste": 32.3,
+            "risk": 0,
+            "relativeCost": 85.2
+          },
+          "balanced, floor 0": {
+            "accuracy": 93.5,
+            "waste": 3.2,
+            "risk": 3.2,
+            "relativeCost": 60
+          },
+          "balanced, floor 0.05": {
+            "accuracy": 83.9,
+            "waste": 14.5,
+            "risk": 1.6,
+            "relativeCost": 69
+          },
+          "balanced, floor 0.1": {
+            "accuracy": 79,
+            "waste": 19.4,
+            "risk": 1.6,
+            "relativeCost": 73.5
+          },
+          "balanced, floor 0.2": {
+            "accuracy": 75.8,
+            "waste": 24.2,
+            "risk": 0,
+            "relativeCost": 78.1
+          },
+          "balanced, floor 0.3": {
+            "accuracy": 74.2,
+            "waste": 25.8,
+            "risk": 0,
+            "relativeCost": 78.7
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "q-git-undo",
+          "ok": true,
+          "error": null,
+          "latencyMs": 1055,
+          "kind": "small_edit",
+          "confidence": 0.07237,
+          "escalate": 0.375391
+        },
+        {
+          "id": "q-regex",
+          "ok": true,
+          "error": null,
+          "latencyMs": 1060,
+          "kind": "question",
+          "confidence": 0.004563,
+          "escalate": 0.440384
+        },
+        {
+          "id": "q-flag",
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "kind": "small_edit",
+          "confidence": 0.003846,
+          "escalate": 0.451484
+        },
+        {
+          "id": "q-explain-fn",
+          "ok": true,
+          "error": null,
+          "latencyMs": 424,
+          "kind": "question",
+          "confidence": 0.763356,
+          "escalate": 0.451484
+        },
+        {
+          "id": "q-diff-map",
+          "ok": true,
+          "error": null,
+          "latencyMs": 433,
+          "kind": "question",
+          "confidence": 0.171848,
+          "escalate": 0.470085
+        },
+        {
+          "id": "q-port",
+          "ok": true,
+          "error": null,
+          "latencyMs": 400,
+          "kind": "architecture",
+          "confidence": 0.015867,
+          "escalate": 0.526183
+        },
+        {
+          "id": "t-typo",
+          "ok": true,
+          "error": null,
+          "latencyMs": 404,
+          "kind": "small_edit",
+          "confidence": 0.987299,
+          "escalate": 0.447778
+        },
+        {
+          "id": "t-rename-var",
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "kind": "mechanical_change",
+          "confidence": 0.926323,
+          "escalate": 0.327655
+        },
+        {
+          "id": "t-rename-fn",
+          "ok": true,
+          "error": null,
+          "latencyMs": 413,
+          "kind": "mechanical_change",
+          "confidence": 0.947048,
+          "escalate": 0.422022
+        },
+        {
+          "id": "t-add-log",
+          "ok": true,
+          "error": null,
+          "latencyMs": 363,
+          "kind": "mechanical_change",
+          "confidence": 0.025756,
+          "escalate": 0.455195
+        },
+        {
+          "id": "t-bump-dep",
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "kind": "mechanical_change",
+          "confidence": 0.148394,
+          "escalate": 0.151594
+        },
+        {
+          "id": "t-gitignore",
+          "ok": true,
+          "error": null,
+          "latencyMs": 380,
+          "kind": "mechanical_change",
+          "confidence": 0,
+          "escalate": 0.440384
+        },
+        {
+          "id": "t-format",
+          "ok": true,
+          "error": null,
+          "latencyMs": 464,
+          "kind": "refactor",
+          "confidence": 0.114371,
+          "escalate": 0.48877
+        },
+        {
+          "id": "t-comment",
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "kind": "small_edit",
+          "confidence": 0.085015,
+          "escalate": 0.462632
+        },
+        {
+          "id": "t-run-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "kind": "bugfix",
+          "confidence": 0.782137,
+          "escalate": 0.780597
+        },
+        {
+          "id": "t-commit",
+          "ok": true,
+          "error": null,
+          "latencyMs": 427,
+          "kind": "small_edit",
+          "confidence": 0.820972,
+          "escalate": 0.298681
+        },
+        {
+          "id": "t-const",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "small_edit",
+          "confidence": 0.33615,
+          "escalate": 0.440384
+        },
+        {
+          "id": "t-readme-section",
+          "ok": true,
+          "error": null,
+          "latencyMs": 434,
+          "kind": "small_edit",
+          "confidence": 0.01597,
+          "escalate": 0.334287
+        },
+        {
+          "id": "b-off-by-one",
+          "ok": true,
+          "error": null,
+          "latencyMs": 619,
+          "kind": "bugfix",
+          "confidence": 0.102555,
+          "escalate": 0.414734
+        },
+        {
+          "id": "b-null-check",
+          "ok": true,
+          "error": null,
+          "latencyMs": 470,
+          "kind": "bugfix",
+          "confidence": 0.964023,
+          "escalate": 0.402071
+        },
+        {
+          "id": "b-failing-test-known",
+          "ok": true,
+          "error": null,
+          "latencyMs": 414,
+          "kind": "bugfix",
+          "confidence": 0.997958,
+          "escalate": 0.588896
+        },
+        {
+          "id": "b-import-error",
+          "ok": true,
+          "error": null,
+          "latencyMs": 429,
+          "kind": "bugfix",
+          "confidence": 0.455579,
+          "escalate": 0.411104
+        },
+        {
+          "id": "b-css",
+          "ok": true,
+          "error": null,
+          "latencyMs": 426,
+          "kind": "bugfix",
+          "confidence": 0.688802,
+          "escalate": 0.552222
+        },
+        {
+          "id": "b-sql",
+          "ok": true,
+          "error": null,
+          "latencyMs": 495,
+          "kind": "bugfix",
+          "confidence": 0.352211,
+          "escalate": 0.311378
+        },
+        {
+          "id": "b-flaky",
+          "ok": true,
+          "error": null,
+          "latencyMs": 401,
+          "kind": "bugfix",
+          "confidence": 0.975435,
+          "escalate": 0.544805
+        },
+        {
+          "id": "b-memory-leak",
+          "ok": true,
+          "error": null,
+          "latencyMs": 499,
+          "kind": "hard_debugging",
+          "confidence": 0.982992,
+          "escalate": 0.268285
+        },
+        {
+          "id": "b-race",
+          "ok": true,
+          "error": null,
+          "latencyMs": 345,
+          "kind": "mechanical_change",
+          "confidence": 0.136025,
+          "escalate": 0.396683
+        },
+        {
+          "id": "b-deadlock",
+          "ok": true,
+          "error": null,
+          "latencyMs": 386,
+          "kind": "hard_debugging",
+          "confidence": 0.570244,
+          "escalate": 0.462632
+        },
+        {
+          "id": "b-heisenbug",
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "kind": "hard_debugging",
+          "confidence": 0.609108,
+          "escalate": 0.48129
+        },
+        {
+          "id": "b-perf-regression",
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "kind": "design_build",
+          "confidence": 0.036826,
+          "escalate": 0.347747
+        },
+        {
+          "id": "f-endpoint",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "feature",
+          "confidence": 0.346563,
+          "escalate": 0.533643
+        },
+        {
+          "id": "f-cli-flag",
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "kind": "bugfix",
+          "confidence": 0.02044,
+          "escalate": 0.403872
+        },
+        {
+          "id": "f-validation",
+          "ok": true,
+          "error": null,
+          "latencyMs": 558,
+          "kind": "bugfix",
+          "confidence": 0.76909,
+          "escalate": 0.529915
+        },
+        {
+          "id": "f-pagination-api",
+          "ok": true,
+          "error": null,
+          "latencyMs": 406,
+          "kind": "feature",
+          "confidence": 0.785938,
+          "escalate": 0.375391
+        },
+        {
+          "id": "f-caching",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.023019,
+          "escalate": 0.425679
+        },
+        {
+          "id": "f-oauth",
+          "ok": true,
+          "error": null,
+          "latencyMs": 445,
+          "kind": "feature",
+          "confidence": 0.061061,
+          "escalate": 0.48129
+        },
+        {
+          "id": "f-offline-sync",
+          "ok": true,
+          "error": null,
+          "latencyMs": 407,
+          "kind": "design_build",
+          "confidence": 0.977038,
+          "escalate": 0.375391
+        },
+        {
+          "id": "r-extract-module",
+          "ok": true,
+          "error": null,
+          "latencyMs": 380,
+          "kind": "refactor",
+          "confidence": 0.800286,
+          "escalate": 0.522448
+        },
+        {
+          "id": "r-callbacks-async",
+          "ok": true,
+          "error": null,
+          "latencyMs": 486,
+          "kind": "mechanical_change",
+          "confidence": 0.358621,
+          "escalate": 0.537368
+        },
+        {
+          "id": "r-ts-migration",
+          "ok": true,
+          "error": null,
+          "latencyMs": 353,
+          "kind": "refactor",
+          "confidence": 0.942331,
+          "escalate": 0.466357
+        },
+        {
+          "id": "r-multi-file",
+          "ok": true,
+          "error": null,
+          "latencyMs": 383,
+          "kind": "refactor",
+          "confidence": 0.968965,
+          "escalate": 0.433017
+        },
+        {
+          "id": "a-architecture",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "architecture",
+          "confidence": 0.978433,
+          "escalate": 0.403872
+        },
+        {
+          "id": "a-event-sourcing",
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "kind": "architecture",
+          "confidence": 0.995545,
+          "escalate": 0.324364
+        },
+        {
+          "id": "a-api-design",
+          "ok": true,
+          "error": null,
+          "latencyMs": 432,
+          "kind": "design_build",
+          "confidence": 0.271927,
+          "escalate": 0.358005
+        },
+        {
+          "id": "a-db-schema",
+          "ok": true,
+          "error": null,
+          "latencyMs": 337,
+          "kind": "design_build",
+          "confidence": 0.860077,
+          "escalate": 0.364918
+        },
+        {
+          "id": "s-review-auth",
+          "ok": true,
+          "error": null,
+          "latencyMs": 377,
+          "kind": "security_review",
+          "confidence": 0.999914,
+          "escalate": 0.339304
+        },
+        {
+          "id": "s-sqli",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.816601,
+          "escalate": 0.380672
+        },
+        {
+          "id": "s-secrets",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "search",
+          "confidence": 0.999142,
+          "escalate": 0.537368
+        },
+        {
+          "id": "p-n-plus-one",
+          "ok": true,
+          "error": null,
+          "latencyMs": 384,
+          "kind": "bugfix",
+          "confidence": 0.952957,
+          "escalate": 0.433017
+        },
+        {
+          "id": "p-algorithm",
+          "ok": true,
+          "error": null,
+          "latencyMs": 405,
+          "kind": "small_edit",
+          "confidence": 0.027403,
+          "escalate": 0.304992
+        },
+        {
+          "id": "p-bundle",
+          "ok": true,
+          "error": null,
+          "latencyMs": 352,
+          "kind": "optimize",
+          "confidence": 0.380106,
+          "escalate": 0.462632
+        },
+        {
+          "id": "x-explain-codebase",
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "kind": "explain_codebase",
+          "confidence": 0.994766,
+          "escalate": 0.425679
+        },
+        {
+          "id": "x-write-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "kind": "feature",
+          "confidence": 0.242803,
+          "escalate": 0.433017
+        },
+        {
+          "id": "x-docs",
+          "ok": true,
+          "error": null,
+          "latencyMs": 398,
+          "kind": "small_edit",
+          "confidence": 0.055974,
+          "escalate": 0.375391
+        },
+        {
+          "id": "amb-fix-failing",
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "amb-fix-failing-ctx",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "amb-continue",
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        },
+        {
+          "id": "amb-continue-ctx",
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        },
+        {
+          "id": "amb-yes",
+          "ok": true,
+          "error": null,
+          "latencyMs": 387,
+          "kind": "design_build",
+          "confidence": 0.009047,
+          "escalate": 0.748982
+        },
+        {
+          "id": "amb-still-broken",
+          "ok": true,
+          "error": null,
+          "latencyMs": 477,
+          "kind": "hard_debugging",
+          "confidence": 0.032935,
+          "escalate": 0.721302
+        },
+        {
+          "id": "amb-do-it",
+          "ok": true,
+          "error": null,
+          "latencyMs": 366,
+          "kind": "continuation",
+          "confidence": 0.38534,
+          "escalate": 0.524316
+        },
+        {
+          "id": "amb-pt",
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "kind": "bugfix",
+          "confidence": 0.989184,
+          "escalate": 0.372761
+        }
+      ]
+    },
+    {
+      "variant": "kinds",
+      "set": "routing",
+      "family": "codex",
+      "summary": {
+        "cases": 62,
+        "errors": 0,
+        "rateLimitRetries": 0,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "latencyMs": {
+          "p50": 398,
+          "p95": 558
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 56.5,
+            "waste": 0,
+            "risk": 43.5,
+            "relativeCost": 16.7
+          },
+          "krun economy": {
+            "accuracy": 77.4,
+            "waste": 3.2,
+            "risk": 19.4,
+            "relativeCost": 43.5
+          },
+          "krun balanced": {
+            "accuracy": 93.5,
+            "waste": 3.2,
+            "risk": 3.2,
+            "relativeCost": 55.4
+          },
+          "krun quality": {
+            "accuracy": 67.7,
+            "waste": 32.3,
+            "risk": 0,
+            "relativeCost": 81.5
+          },
+          "balanced, floor 0": {
+            "accuracy": 93.5,
+            "waste": 3.2,
+            "risk": 3.2,
+            "relativeCost": 55.4
+          },
+          "balanced, floor 0.05": {
+            "accuracy": 83.9,
+            "waste": 14.5,
+            "risk": 1.6,
+            "relativeCost": 65.1
+          },
+          "balanced, floor 0.1": {
+            "accuracy": 79,
+            "waste": 19.4,
+            "risk": 1.6,
+            "relativeCost": 69.9
+          },
+          "balanced, floor 0.2": {
+            "accuracy": 75.8,
+            "waste": 24.2,
+            "risk": 0,
+            "relativeCost": 74.7
+          },
+          "balanced, floor 0.3": {
+            "accuracy": 74.2,
+            "waste": 25.8,
+            "risk": 0,
+            "relativeCost": 75.5
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "q-git-undo",
+          "ok": true,
+          "error": null,
+          "latencyMs": 1055,
+          "kind": "small_edit",
+          "confidence": 0.07237,
+          "escalate": 0.375391
+        },
+        {
+          "id": "q-regex",
+          "ok": true,
+          "error": null,
+          "latencyMs": 1060,
+          "kind": "question",
+          "confidence": 0.004563,
+          "escalate": 0.440384
+        },
+        {
+          "id": "q-flag",
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "kind": "small_edit",
+          "confidence": 0.003846,
+          "escalate": 0.451484
+        },
+        {
+          "id": "q-explain-fn",
+          "ok": true,
+          "error": null,
+          "latencyMs": 424,
+          "kind": "question",
+          "confidence": 0.763356,
+          "escalate": 0.451484
+        },
+        {
+          "id": "q-diff-map",
+          "ok": true,
+          "error": null,
+          "latencyMs": 433,
+          "kind": "question",
+          "confidence": 0.171848,
+          "escalate": 0.470085
+        },
+        {
+          "id": "q-port",
+          "ok": true,
+          "error": null,
+          "latencyMs": 400,
+          "kind": "architecture",
+          "confidence": 0.015867,
+          "escalate": 0.526183
+        },
+        {
+          "id": "t-typo",
+          "ok": true,
+          "error": null,
+          "latencyMs": 404,
+          "kind": "small_edit",
+          "confidence": 0.987299,
+          "escalate": 0.447778
+        },
+        {
+          "id": "t-rename-var",
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "kind": "mechanical_change",
+          "confidence": 0.926323,
+          "escalate": 0.327655
+        },
+        {
+          "id": "t-rename-fn",
+          "ok": true,
+          "error": null,
+          "latencyMs": 413,
+          "kind": "mechanical_change",
+          "confidence": 0.947048,
+          "escalate": 0.422022
+        },
+        {
+          "id": "t-add-log",
+          "ok": true,
+          "error": null,
+          "latencyMs": 363,
+          "kind": "mechanical_change",
+          "confidence": 0.025756,
+          "escalate": 0.455195
+        },
+        {
+          "id": "t-bump-dep",
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "kind": "mechanical_change",
+          "confidence": 0.148394,
+          "escalate": 0.151594
+        },
+        {
+          "id": "t-gitignore",
+          "ok": true,
+          "error": null,
+          "latencyMs": 380,
+          "kind": "mechanical_change",
+          "confidence": 0,
+          "escalate": 0.440384
+        },
+        {
+          "id": "t-format",
+          "ok": true,
+          "error": null,
+          "latencyMs": 464,
+          "kind": "refactor",
+          "confidence": 0.114371,
+          "escalate": 0.48877
+        },
+        {
+          "id": "t-comment",
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "kind": "small_edit",
+          "confidence": 0.085015,
+          "escalate": 0.462632
+        },
+        {
+          "id": "t-run-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "kind": "bugfix",
+          "confidence": 0.782137,
+          "escalate": 0.780597
+        },
+        {
+          "id": "t-commit",
+          "ok": true,
+          "error": null,
+          "latencyMs": 427,
+          "kind": "small_edit",
+          "confidence": 0.820972,
+          "escalate": 0.298681
+        },
+        {
+          "id": "t-const",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "small_edit",
+          "confidence": 0.33615,
+          "escalate": 0.440384
+        },
+        {
+          "id": "t-readme-section",
+          "ok": true,
+          "error": null,
+          "latencyMs": 434,
+          "kind": "small_edit",
+          "confidence": 0.01597,
+          "escalate": 0.334287
+        },
+        {
+          "id": "b-off-by-one",
+          "ok": true,
+          "error": null,
+          "latencyMs": 619,
+          "kind": "bugfix",
+          "confidence": 0.102555,
+          "escalate": 0.414734
+        },
+        {
+          "id": "b-null-check",
+          "ok": true,
+          "error": null,
+          "latencyMs": 470,
+          "kind": "bugfix",
+          "confidence": 0.964023,
+          "escalate": 0.402071
+        },
+        {
+          "id": "b-failing-test-known",
+          "ok": true,
+          "error": null,
+          "latencyMs": 414,
+          "kind": "bugfix",
+          "confidence": 0.997958,
+          "escalate": 0.588896
+        },
+        {
+          "id": "b-import-error",
+          "ok": true,
+          "error": null,
+          "latencyMs": 429,
+          "kind": "bugfix",
+          "confidence": 0.455579,
+          "escalate": 0.411104
+        },
+        {
+          "id": "b-css",
+          "ok": true,
+          "error": null,
+          "latencyMs": 426,
+          "kind": "bugfix",
+          "confidence": 0.688802,
+          "escalate": 0.552222
+        },
+        {
+          "id": "b-sql",
+          "ok": true,
+          "error": null,
+          "latencyMs": 495,
+          "kind": "bugfix",
+          "confidence": 0.352211,
+          "escalate": 0.311378
+        },
+        {
+          "id": "b-flaky",
+          "ok": true,
+          "error": null,
+          "latencyMs": 401,
+          "kind": "bugfix",
+          "confidence": 0.975435,
+          "escalate": 0.544805
+        },
+        {
+          "id": "b-memory-leak",
+          "ok": true,
+          "error": null,
+          "latencyMs": 499,
+          "kind": "hard_debugging",
+          "confidence": 0.982992,
+          "escalate": 0.268285
+        },
+        {
+          "id": "b-race",
+          "ok": true,
+          "error": null,
+          "latencyMs": 345,
+          "kind": "mechanical_change",
+          "confidence": 0.136025,
+          "escalate": 0.396683
+        },
+        {
+          "id": "b-deadlock",
+          "ok": true,
+          "error": null,
+          "latencyMs": 386,
+          "kind": "hard_debugging",
+          "confidence": 0.570244,
+          "escalate": 0.462632
+        },
+        {
+          "id": "b-heisenbug",
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "kind": "hard_debugging",
+          "confidence": 0.609108,
+          "escalate": 0.48129
+        },
+        {
+          "id": "b-perf-regression",
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "kind": "design_build",
+          "confidence": 0.036826,
+          "escalate": 0.347747
+        },
+        {
+          "id": "f-endpoint",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "feature",
+          "confidence": 0.346563,
+          "escalate": 0.533643
+        },
+        {
+          "id": "f-cli-flag",
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "kind": "bugfix",
+          "confidence": 0.02044,
+          "escalate": 0.403872
+        },
+        {
+          "id": "f-validation",
+          "ok": true,
+          "error": null,
+          "latencyMs": 558,
+          "kind": "bugfix",
+          "confidence": 0.76909,
+          "escalate": 0.529915
+        },
+        {
+          "id": "f-pagination-api",
+          "ok": true,
+          "error": null,
+          "latencyMs": 406,
+          "kind": "feature",
+          "confidence": 0.785938,
+          "escalate": 0.375391
+        },
+        {
+          "id": "f-caching",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.023019,
+          "escalate": 0.425679
+        },
+        {
+          "id": "f-oauth",
+          "ok": true,
+          "error": null,
+          "latencyMs": 445,
+          "kind": "feature",
+          "confidence": 0.061061,
+          "escalate": 0.48129
+        },
+        {
+          "id": "f-offline-sync",
+          "ok": true,
+          "error": null,
+          "latencyMs": 407,
+          "kind": "design_build",
+          "confidence": 0.977038,
+          "escalate": 0.375391
+        },
+        {
+          "id": "r-extract-module",
+          "ok": true,
+          "error": null,
+          "latencyMs": 380,
+          "kind": "refactor",
+          "confidence": 0.800286,
+          "escalate": 0.522448
+        },
+        {
+          "id": "r-callbacks-async",
+          "ok": true,
+          "error": null,
+          "latencyMs": 486,
+          "kind": "mechanical_change",
+          "confidence": 0.358621,
+          "escalate": 0.537368
+        },
+        {
+          "id": "r-ts-migration",
+          "ok": true,
+          "error": null,
+          "latencyMs": 353,
+          "kind": "refactor",
+          "confidence": 0.942331,
+          "escalate": 0.466357
+        },
+        {
+          "id": "r-multi-file",
+          "ok": true,
+          "error": null,
+          "latencyMs": 383,
+          "kind": "refactor",
+          "confidence": 0.968965,
+          "escalate": 0.433017
+        },
+        {
+          "id": "a-architecture",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "architecture",
+          "confidence": 0.978433,
+          "escalate": 0.403872
+        },
+        {
+          "id": "a-event-sourcing",
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "kind": "architecture",
+          "confidence": 0.995545,
+          "escalate": 0.324364
+        },
+        {
+          "id": "a-api-design",
+          "ok": true,
+          "error": null,
+          "latencyMs": 432,
+          "kind": "design_build",
+          "confidence": 0.271927,
+          "escalate": 0.358005
+        },
+        {
+          "id": "a-db-schema",
+          "ok": true,
+          "error": null,
+          "latencyMs": 337,
+          "kind": "design_build",
+          "confidence": 0.860077,
+          "escalate": 0.364918
+        },
+        {
+          "id": "s-review-auth",
+          "ok": true,
+          "error": null,
+          "latencyMs": 377,
+          "kind": "security_review",
+          "confidence": 0.999914,
+          "escalate": 0.339304
+        },
+        {
+          "id": "s-sqli",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.816601,
+          "escalate": 0.380672
+        },
+        {
+          "id": "s-secrets",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "search",
+          "confidence": 0.999142,
+          "escalate": 0.537368
+        },
+        {
+          "id": "p-n-plus-one",
+          "ok": true,
+          "error": null,
+          "latencyMs": 384,
+          "kind": "bugfix",
+          "confidence": 0.952957,
+          "escalate": 0.433017
+        },
+        {
+          "id": "p-algorithm",
+          "ok": true,
+          "error": null,
+          "latencyMs": 405,
+          "kind": "small_edit",
+          "confidence": 0.027403,
+          "escalate": 0.304992
+        },
+        {
+          "id": "p-bundle",
+          "ok": true,
+          "error": null,
+          "latencyMs": 352,
+          "kind": "optimize",
+          "confidence": 0.380106,
+          "escalate": 0.462632
+        },
+        {
+          "id": "x-explain-codebase",
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "kind": "explain_codebase",
+          "confidence": 0.994766,
+          "escalate": 0.425679
+        },
+        {
+          "id": "x-write-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "kind": "feature",
+          "confidence": 0.242803,
+          "escalate": 0.433017
+        },
+        {
+          "id": "x-docs",
+          "ok": true,
+          "error": null,
+          "latencyMs": 398,
+          "kind": "small_edit",
+          "confidence": 0.055974,
+          "escalate": 0.375391
+        },
+        {
+          "id": "amb-fix-failing",
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "amb-fix-failing-ctx",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "amb-continue",
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        },
+        {
+          "id": "amb-continue-ctx",
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        },
+        {
+          "id": "amb-yes",
+          "ok": true,
+          "error": null,
+          "latencyMs": 387,
+          "kind": "design_build",
+          "confidence": 0.009047,
+          "escalate": 0.748982
+        },
+        {
+          "id": "amb-still-broken",
+          "ok": true,
+          "error": null,
+          "latencyMs": 477,
+          "kind": "hard_debugging",
+          "confidence": 0.032935,
+          "escalate": 0.721302
+        },
+        {
+          "id": "amb-do-it",
+          "ok": true,
+          "error": null,
+          "latencyMs": 366,
+          "kind": "continuation",
+          "confidence": 0.38534,
+          "escalate": 0.524316
+        },
+        {
+          "id": "amb-pt",
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "kind": "bugfix",
+          "confidence": 0.989184,
+          "escalate": 0.372761
+        }
+      ]
+    },
+    {
+      "variant": "kinds",
+      "set": "routing",
+      "family": "kimi",
+      "summary": {
+        "cases": 62,
+        "errors": 0,
+        "rateLimitRetries": 0,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "latencyMs": {
+          "p50": 398,
+          "p95": 558
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 41.9,
+            "waste": 58.1,
+            "risk": 0,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 56.5,
+            "waste": 0,
+            "risk": 43.5,
+            "relativeCost": 33.3
+          },
+          "krun economy": {
+            "accuracy": 77.4,
+            "waste": 3.2,
+            "risk": 19.4,
+            "relativeCost": 54.8
+          },
+          "krun balanced": {
+            "accuracy": 93.5,
+            "waste": 3.2,
+            "risk": 3.2,
+            "relativeCost": 66.7
+          },
+          "krun quality": {
+            "accuracy": 67.7,
+            "waste": 32.3,
+            "risk": 0,
+            "relativeCost": 87.6
+          },
+          "balanced, floor 0": {
+            "accuracy": 93.5,
+            "waste": 3.2,
+            "risk": 3.2,
+            "relativeCost": 66.7
+          },
+          "balanced, floor 0.05": {
+            "accuracy": 83.9,
+            "waste": 14.5,
+            "risk": 1.6,
+            "relativeCost": 74.2
+          },
+          "balanced, floor 0.1": {
+            "accuracy": 79,
+            "waste": 19.4,
+            "risk": 1.6,
+            "relativeCost": 78
+          },
+          "balanced, floor 0.2": {
+            "accuracy": 75.8,
+            "waste": 24.2,
+            "risk": 0,
+            "relativeCost": 81.7
+          },
+          "balanced, floor 0.3": {
+            "accuracy": 74.2,
+            "waste": 25.8,
+            "risk": 0,
+            "relativeCost": 82.3
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "q-git-undo",
+          "ok": true,
+          "error": null,
+          "latencyMs": 1055,
+          "kind": "small_edit",
+          "confidence": 0.07237,
+          "escalate": 0.375391
+        },
+        {
+          "id": "q-regex",
+          "ok": true,
+          "error": null,
+          "latencyMs": 1060,
+          "kind": "question",
+          "confidence": 0.004563,
+          "escalate": 0.440384
+        },
+        {
+          "id": "q-flag",
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "kind": "small_edit",
+          "confidence": 0.003846,
+          "escalate": 0.451484
+        },
+        {
+          "id": "q-explain-fn",
+          "ok": true,
+          "error": null,
+          "latencyMs": 424,
+          "kind": "question",
+          "confidence": 0.763356,
+          "escalate": 0.451484
+        },
+        {
+          "id": "q-diff-map",
+          "ok": true,
+          "error": null,
+          "latencyMs": 433,
+          "kind": "question",
+          "confidence": 0.171848,
+          "escalate": 0.470085
+        },
+        {
+          "id": "q-port",
+          "ok": true,
+          "error": null,
+          "latencyMs": 400,
+          "kind": "architecture",
+          "confidence": 0.015867,
+          "escalate": 0.526183
+        },
+        {
+          "id": "t-typo",
+          "ok": true,
+          "error": null,
+          "latencyMs": 404,
+          "kind": "small_edit",
+          "confidence": 0.987299,
+          "escalate": 0.447778
+        },
+        {
+          "id": "t-rename-var",
+          "ok": true,
+          "error": null,
+          "latencyMs": 439,
+          "kind": "mechanical_change",
+          "confidence": 0.926323,
+          "escalate": 0.327655
+        },
+        {
+          "id": "t-rename-fn",
+          "ok": true,
+          "error": null,
+          "latencyMs": 413,
+          "kind": "mechanical_change",
+          "confidence": 0.947048,
+          "escalate": 0.422022
+        },
+        {
+          "id": "t-add-log",
+          "ok": true,
+          "error": null,
+          "latencyMs": 363,
+          "kind": "mechanical_change",
+          "confidence": 0.025756,
+          "escalate": 0.455195
+        },
+        {
+          "id": "t-bump-dep",
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "kind": "mechanical_change",
+          "confidence": 0.148394,
+          "escalate": 0.151594
+        },
+        {
+          "id": "t-gitignore",
+          "ok": true,
+          "error": null,
+          "latencyMs": 380,
+          "kind": "mechanical_change",
+          "confidence": 0,
+          "escalate": 0.440384
+        },
+        {
+          "id": "t-format",
+          "ok": true,
+          "error": null,
+          "latencyMs": 464,
+          "kind": "refactor",
+          "confidence": 0.114371,
+          "escalate": 0.48877
+        },
+        {
+          "id": "t-comment",
+          "ok": true,
+          "error": null,
+          "latencyMs": 360,
+          "kind": "small_edit",
+          "confidence": 0.085015,
+          "escalate": 0.462632
+        },
+        {
+          "id": "t-run-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "kind": "bugfix",
+          "confidence": 0.782137,
+          "escalate": 0.780597
+        },
+        {
+          "id": "t-commit",
+          "ok": true,
+          "error": null,
+          "latencyMs": 427,
+          "kind": "small_edit",
+          "confidence": 0.820972,
+          "escalate": 0.298681
+        },
+        {
+          "id": "t-const",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "small_edit",
+          "confidence": 0.33615,
+          "escalate": 0.440384
+        },
+        {
+          "id": "t-readme-section",
+          "ok": true,
+          "error": null,
+          "latencyMs": 434,
+          "kind": "small_edit",
+          "confidence": 0.01597,
+          "escalate": 0.334287
+        },
+        {
+          "id": "b-off-by-one",
+          "ok": true,
+          "error": null,
+          "latencyMs": 619,
+          "kind": "bugfix",
+          "confidence": 0.102555,
+          "escalate": 0.414734
+        },
+        {
+          "id": "b-null-check",
+          "ok": true,
+          "error": null,
+          "latencyMs": 470,
+          "kind": "bugfix",
+          "confidence": 0.964023,
+          "escalate": 0.402071
+        },
+        {
+          "id": "b-failing-test-known",
+          "ok": true,
+          "error": null,
+          "latencyMs": 414,
+          "kind": "bugfix",
+          "confidence": 0.997958,
+          "escalate": 0.588896
+        },
+        {
+          "id": "b-import-error",
+          "ok": true,
+          "error": null,
+          "latencyMs": 429,
+          "kind": "bugfix",
+          "confidence": 0.455579,
+          "escalate": 0.411104
+        },
+        {
+          "id": "b-css",
+          "ok": true,
+          "error": null,
+          "latencyMs": 426,
+          "kind": "bugfix",
+          "confidence": 0.688802,
+          "escalate": 0.552222
+        },
+        {
+          "id": "b-sql",
+          "ok": true,
+          "error": null,
+          "latencyMs": 495,
+          "kind": "bugfix",
+          "confidence": 0.352211,
+          "escalate": 0.311378
+        },
+        {
+          "id": "b-flaky",
+          "ok": true,
+          "error": null,
+          "latencyMs": 401,
+          "kind": "bugfix",
+          "confidence": 0.975435,
+          "escalate": 0.544805
+        },
+        {
+          "id": "b-memory-leak",
+          "ok": true,
+          "error": null,
+          "latencyMs": 499,
+          "kind": "hard_debugging",
+          "confidence": 0.982992,
+          "escalate": 0.268285
+        },
+        {
+          "id": "b-race",
+          "ok": true,
+          "error": null,
+          "latencyMs": 345,
+          "kind": "mechanical_change",
+          "confidence": 0.136025,
+          "escalate": 0.396683
+        },
+        {
+          "id": "b-deadlock",
+          "ok": true,
+          "error": null,
+          "latencyMs": 386,
+          "kind": "hard_debugging",
+          "confidence": 0.570244,
+          "escalate": 0.462632
+        },
+        {
+          "id": "b-heisenbug",
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "kind": "hard_debugging",
+          "confidence": 0.609108,
+          "escalate": 0.48129
+        },
+        {
+          "id": "b-perf-regression",
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "kind": "design_build",
+          "confidence": 0.036826,
+          "escalate": 0.347747
+        },
+        {
+          "id": "f-endpoint",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "feature",
+          "confidence": 0.346563,
+          "escalate": 0.533643
+        },
+        {
+          "id": "f-cli-flag",
+          "ok": true,
+          "error": null,
+          "latencyMs": 378,
+          "kind": "bugfix",
+          "confidence": 0.02044,
+          "escalate": 0.403872
+        },
+        {
+          "id": "f-validation",
+          "ok": true,
+          "error": null,
+          "latencyMs": 558,
+          "kind": "bugfix",
+          "confidence": 0.76909,
+          "escalate": 0.529915
+        },
+        {
+          "id": "f-pagination-api",
+          "ok": true,
+          "error": null,
+          "latencyMs": 406,
+          "kind": "feature",
+          "confidence": 0.785938,
+          "escalate": 0.375391
+        },
+        {
+          "id": "f-caching",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.023019,
+          "escalate": 0.425679
+        },
+        {
+          "id": "f-oauth",
+          "ok": true,
+          "error": null,
+          "latencyMs": 445,
+          "kind": "feature",
+          "confidence": 0.061061,
+          "escalate": 0.48129
+        },
+        {
+          "id": "f-offline-sync",
+          "ok": true,
+          "error": null,
+          "latencyMs": 407,
+          "kind": "design_build",
+          "confidence": 0.977038,
+          "escalate": 0.375391
+        },
+        {
+          "id": "r-extract-module",
+          "ok": true,
+          "error": null,
+          "latencyMs": 380,
+          "kind": "refactor",
+          "confidence": 0.800286,
+          "escalate": 0.522448
+        },
+        {
+          "id": "r-callbacks-async",
+          "ok": true,
+          "error": null,
+          "latencyMs": 486,
+          "kind": "mechanical_change",
+          "confidence": 0.358621,
+          "escalate": 0.537368
+        },
+        {
+          "id": "r-ts-migration",
+          "ok": true,
+          "error": null,
+          "latencyMs": 353,
+          "kind": "refactor",
+          "confidence": 0.942331,
+          "escalate": 0.466357
+        },
+        {
+          "id": "r-multi-file",
+          "ok": true,
+          "error": null,
+          "latencyMs": 383,
+          "kind": "refactor",
+          "confidence": 0.968965,
+          "escalate": 0.433017
+        },
+        {
+          "id": "a-architecture",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "architecture",
+          "confidence": 0.978433,
+          "escalate": 0.403872
+        },
+        {
+          "id": "a-event-sourcing",
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "kind": "architecture",
+          "confidence": 0.995545,
+          "escalate": 0.324364
+        },
+        {
+          "id": "a-api-design",
+          "ok": true,
+          "error": null,
+          "latencyMs": 432,
+          "kind": "design_build",
+          "confidence": 0.271927,
+          "escalate": 0.358005
+        },
+        {
+          "id": "a-db-schema",
+          "ok": true,
+          "error": null,
+          "latencyMs": 337,
+          "kind": "design_build",
+          "confidence": 0.860077,
+          "escalate": 0.364918
+        },
+        {
+          "id": "s-review-auth",
+          "ok": true,
+          "error": null,
+          "latencyMs": 377,
+          "kind": "security_review",
+          "confidence": 0.999914,
+          "escalate": 0.339304
+        },
+        {
+          "id": "s-sqli",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.816601,
+          "escalate": 0.380672
+        },
+        {
+          "id": "s-secrets",
+          "ok": true,
+          "error": null,
+          "latencyMs": 381,
+          "kind": "search",
+          "confidence": 0.999142,
+          "escalate": 0.537368
+        },
+        {
+          "id": "p-n-plus-one",
+          "ok": true,
+          "error": null,
+          "latencyMs": 384,
+          "kind": "bugfix",
+          "confidence": 0.952957,
+          "escalate": 0.433017
+        },
+        {
+          "id": "p-algorithm",
+          "ok": true,
+          "error": null,
+          "latencyMs": 405,
+          "kind": "small_edit",
+          "confidence": 0.027403,
+          "escalate": 0.304992
+        },
+        {
+          "id": "p-bundle",
+          "ok": true,
+          "error": null,
+          "latencyMs": 352,
+          "kind": "optimize",
+          "confidence": 0.380106,
+          "escalate": 0.462632
+        },
+        {
+          "id": "x-explain-codebase",
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "kind": "explain_codebase",
+          "confidence": 0.994766,
+          "escalate": 0.425679
+        },
+        {
+          "id": "x-write-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "kind": "feature",
+          "confidence": 0.242803,
+          "escalate": 0.433017
+        },
+        {
+          "id": "x-docs",
+          "ok": true,
+          "error": null,
+          "latencyMs": 398,
+          "kind": "small_edit",
+          "confidence": 0.055974,
+          "escalate": 0.375391
+        },
+        {
+          "id": "amb-fix-failing",
+          "ok": true,
+          "error": null,
+          "latencyMs": 393,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "amb-fix-failing-ctx",
+          "ok": true,
+          "error": null,
+          "latencyMs": 391,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "amb-continue",
+          "ok": true,
+          "error": null,
+          "latencyMs": 346,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        },
+        {
+          "id": "amb-continue-ctx",
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        },
+        {
+          "id": "amb-yes",
+          "ok": true,
+          "error": null,
+          "latencyMs": 387,
+          "kind": "design_build",
+          "confidence": 0.009047,
+          "escalate": 0.748982
+        },
+        {
+          "id": "amb-still-broken",
+          "ok": true,
+          "error": null,
+          "latencyMs": 477,
+          "kind": "hard_debugging",
+          "confidence": 0.032935,
+          "escalate": 0.721302
+        },
+        {
+          "id": "amb-do-it",
+          "ok": true,
+          "error": null,
+          "latencyMs": 366,
+          "kind": "continuation",
+          "confidence": 0.38534,
+          "escalate": 0.524316
+        },
+        {
+          "id": "amb-pt",
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "kind": "bugfix",
+          "confidence": 0.989184,
+          "escalate": 0.372761
+        }
+      ]
+    },
+    {
+      "variant": "kinds",
+      "set": "holdout",
+      "family": "claude",
+      "summary": {
+        "cases": 16,
+        "errors": 0,
+        "rateLimitRetries": 2,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "latencyMs": {
+          "p50": 396,
+          "p95": 446
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 43.8,
+            "waste": 56.3,
+            "risk": 0,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 43.8,
+            "waste": 0,
+            "risk": 56.3,
+            "relativeCost": 20
+          },
+          "krun economy": {
+            "accuracy": 62.5,
+            "waste": 18.8,
+            "risk": 18.8,
+            "relativeCost": 65
+          },
+          "krun balanced": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 75
+          },
+          "krun quality": {
+            "accuracy": 62.5,
+            "waste": 37.5,
+            "risk": 0,
+            "relativeCost": 85
+          },
+          "balanced, floor 0": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 75
+          },
+          "balanced, floor 0.05": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 77.5
+          },
+          "balanced, floor 0.1": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 77.5
+          },
+          "balanced, floor 0.2": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 77.5
+          },
+          "balanced, floor 0.3": {
+            "accuracy": 75,
+            "waste": 25,
+            "risk": 0,
+            "relativeCost": 80
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "h-regex",
+          "ok": true,
+          "error": null,
+          "latencyMs": 417,
+          "kind": "design_build",
+          "confidence": 0.00384,
+          "escalate": 0.403872
+        },
+        {
+          "id": "h-docker-logs",
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "kind": "architecture",
+          "confidence": 0.101102,
+          "escalate": 0.422022
+        },
+        {
+          "id": "h-env-example",
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "kind": "mechanical_change",
+          "confidence": 0.563365,
+          "escalate": 0.259558
+        },
+        {
+          "id": "h-lint-fix",
+          "ok": true,
+          "error": null,
+          "latencyMs": 395,
+          "kind": "command",
+          "confidence": 0.934587,
+          "escalate": 0.492513
+        },
+        {
+          "id": "h-null-check",
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "kind": "bugfix",
+          "confidence": 0.978684,
+          "escalate": 0.485029
+        },
+        {
+          "id": "h-csv-export",
+          "ok": true,
+          "error": null,
+          "latencyMs": 379,
+          "kind": "design_build",
+          "confidence": 0.045254,
+          "escalate": 0.358005
+        },
+        {
+          "id": "h-retry",
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "kind": "feature",
+          "confidence": 0.297058,
+          "escalate": 0.485029
+        },
+        {
+          "id": "h-slow-endpoint",
+          "ok": true,
+          "error": null,
+          "latencyMs": 425,
+          "kind": "optimize",
+          "confidence": 0.014648,
+          "escalate": 0.447778
+        },
+        {
+          "id": "h-auth-flow",
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "kind": "explain_codebase",
+          "confidence": 0.76146,
+          "escalate": 0.368395
+        },
+        {
+          "id": "h-multitenant",
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "kind": "design_build",
+          "confidence": 0.66853,
+          "escalate": 0.259558
+        },
+        {
+          "id": "h-leak",
+          "ok": true,
+          "error": null,
+          "latencyMs": 427,
+          "kind": "hard_debugging",
+          "confidence": 0.941764,
+          "escalate": 0.317836
+        },
+        {
+          "id": "h-jwt-review",
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "kind": "security_review",
+          "confidence": 0.973732,
+          "escalate": 0.566983
+        },
+        {
+          "id": "h-py-to-go",
+          "ok": true,
+          "error": null,
+          "latencyMs": 362,
+          "kind": "refactor",
+          "confidence": 0.126756,
+          "escalate": 0.358005
+        },
+        {
+          "id": "h-sharding",
+          "ok": true,
+          "error": null,
+          "latencyMs": 446,
+          "kind": "design_build",
+          "confidence": 0.044483,
+          "escalate": 0.382439
+        },
+        {
+          "id": "h-ok",
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "kind": "continuation",
+          "confidence": 0.460764,
+          "escalate": 0.5
+        },
+        {
+          "id": "h-typo-readme",
+          "ok": true,
+          "error": null,
+          "latencyMs": 409,
+          "kind": "small_edit",
+          "confidence": 0.910259,
+          "escalate": 0.378909
+        }
+      ]
+    },
+    {
+      "variant": "kinds",
+      "set": "holdout",
+      "family": "codex",
+      "summary": {
+        "cases": 16,
+        "errors": 0,
+        "rateLimitRetries": 2,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "latencyMs": {
+          "p50": 396,
+          "p95": 446
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 43.8,
+            "waste": 56.3,
+            "risk": 0,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 43.8,
+            "waste": 0,
+            "risk": 56.3,
+            "relativeCost": 16.7
+          },
+          "krun economy": {
+            "accuracy": 62.5,
+            "waste": 18.8,
+            "risk": 18.8,
+            "relativeCost": 63.5
+          },
+          "krun balanced": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 71.9
+          },
+          "krun quality": {
+            "accuracy": 62.5,
+            "waste": 37.5,
+            "risk": 0,
+            "relativeCost": 81.3
+          },
+          "balanced, floor 0": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 71.9
+          },
+          "balanced, floor 0.05": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 75
+          },
+          "balanced, floor 0.1": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 75
+          },
+          "balanced, floor 0.2": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 75
+          },
+          "balanced, floor 0.3": {
+            "accuracy": 75,
+            "waste": 25,
+            "risk": 0,
+            "relativeCost": 78.1
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "h-regex",
+          "ok": true,
+          "error": null,
+          "latencyMs": 417,
+          "kind": "design_build",
+          "confidence": 0.00384,
+          "escalate": 0.403872
+        },
+        {
+          "id": "h-docker-logs",
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "kind": "architecture",
+          "confidence": 0.101102,
+          "escalate": 0.422022
+        },
+        {
+          "id": "h-env-example",
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "kind": "mechanical_change",
+          "confidence": 0.563365,
+          "escalate": 0.259558
+        },
+        {
+          "id": "h-lint-fix",
+          "ok": true,
+          "error": null,
+          "latencyMs": 395,
+          "kind": "command",
+          "confidence": 0.934587,
+          "escalate": 0.492513
+        },
+        {
+          "id": "h-null-check",
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "kind": "bugfix",
+          "confidence": 0.978684,
+          "escalate": 0.485029
+        },
+        {
+          "id": "h-csv-export",
+          "ok": true,
+          "error": null,
+          "latencyMs": 379,
+          "kind": "design_build",
+          "confidence": 0.045254,
+          "escalate": 0.358005
+        },
+        {
+          "id": "h-retry",
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "kind": "feature",
+          "confidence": 0.297058,
+          "escalate": 0.485029
+        },
+        {
+          "id": "h-slow-endpoint",
+          "ok": true,
+          "error": null,
+          "latencyMs": 425,
+          "kind": "optimize",
+          "confidence": 0.014648,
+          "escalate": 0.447778
+        },
+        {
+          "id": "h-auth-flow",
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "kind": "explain_codebase",
+          "confidence": 0.76146,
+          "escalate": 0.368395
+        },
+        {
+          "id": "h-multitenant",
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "kind": "design_build",
+          "confidence": 0.66853,
+          "escalate": 0.259558
+        },
+        {
+          "id": "h-leak",
+          "ok": true,
+          "error": null,
+          "latencyMs": 427,
+          "kind": "hard_debugging",
+          "confidence": 0.941764,
+          "escalate": 0.317836
+        },
+        {
+          "id": "h-jwt-review",
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "kind": "security_review",
+          "confidence": 0.973732,
+          "escalate": 0.566983
+        },
+        {
+          "id": "h-py-to-go",
+          "ok": true,
+          "error": null,
+          "latencyMs": 362,
+          "kind": "refactor",
+          "confidence": 0.126756,
+          "escalate": 0.358005
+        },
+        {
+          "id": "h-sharding",
+          "ok": true,
+          "error": null,
+          "latencyMs": 446,
+          "kind": "design_build",
+          "confidence": 0.044483,
+          "escalate": 0.382439
+        },
+        {
+          "id": "h-ok",
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "kind": "continuation",
+          "confidence": 0.460764,
+          "escalate": 0.5
+        },
+        {
+          "id": "h-typo-readme",
+          "ok": true,
+          "error": null,
+          "latencyMs": 409,
+          "kind": "small_edit",
+          "confidence": 0.910259,
+          "escalate": 0.378909
+        }
+      ]
+    },
+    {
+      "variant": "kinds",
+      "set": "holdout",
+      "family": "kimi",
+      "summary": {
+        "cases": 16,
+        "errors": 0,
+        "rateLimitRetries": 2,
+        "timeouts": 0,
+        "overDeadline": 0,
+        "latencyMs": {
+          "p50": 396,
+          "p95": 446
+        },
+        "policies": {
+          "always large": {
+            "accuracy": 43.8,
+            "waste": 56.3,
+            "risk": 0,
+            "relativeCost": 100
+          },
+          "always small": {
+            "accuracy": 43.8,
+            "waste": 0,
+            "risk": 56.3,
+            "relativeCost": 33.3
+          },
+          "krun economy": {
+            "accuracy": 62.5,
+            "waste": 18.8,
+            "risk": 18.8,
+            "relativeCost": 70.8
+          },
+          "krun balanced": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 79.2
+          },
+          "krun quality": {
+            "accuracy": 62.5,
+            "waste": 37.5,
+            "risk": 0,
+            "relativeCost": 87.5
+          },
+          "balanced, floor 0": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 79.2
+          },
+          "balanced, floor 0.05": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 81.3
+          },
+          "balanced, floor 0.1": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 81.3
+          },
+          "balanced, floor 0.2": {
+            "accuracy": 81.3,
+            "waste": 18.8,
+            "risk": 0,
+            "relativeCost": 81.3
+          },
+          "balanced, floor 0.3": {
+            "accuracy": 75,
+            "waste": 25,
+            "risk": 0,
+            "relativeCost": 83.3
+          }
+        }
+      },
+      "results": [
+        {
+          "id": "h-regex",
+          "ok": true,
+          "error": null,
+          "latencyMs": 417,
+          "kind": "design_build",
+          "confidence": 0.00384,
+          "escalate": 0.403872
+        },
+        {
+          "id": "h-docker-logs",
+          "ok": true,
+          "error": null,
+          "latencyMs": 373,
+          "kind": "architecture",
+          "confidence": 0.101102,
+          "escalate": 0.422022
+        },
+        {
+          "id": "h-env-example",
+          "ok": true,
+          "error": null,
+          "latencyMs": 371,
+          "kind": "mechanical_change",
+          "confidence": 0.563365,
+          "escalate": 0.259558
+        },
+        {
+          "id": "h-lint-fix",
+          "ok": true,
+          "error": null,
+          "latencyMs": 395,
+          "kind": "command",
+          "confidence": 0.934587,
+          "escalate": 0.492513
+        },
+        {
+          "id": "h-null-check",
+          "ok": true,
+          "error": null,
+          "latencyMs": 396,
+          "kind": "bugfix",
+          "confidence": 0.978684,
+          "escalate": 0.485029
+        },
+        {
+          "id": "h-csv-export",
+          "ok": true,
+          "error": null,
+          "latencyMs": 379,
+          "kind": "design_build",
+          "confidence": 0.045254,
+          "escalate": 0.358005
+        },
+        {
+          "id": "h-retry",
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "kind": "feature",
+          "confidence": 0.297058,
+          "escalate": 0.485029
+        },
+        {
+          "id": "h-slow-endpoint",
+          "ok": true,
+          "error": null,
+          "latencyMs": 425,
+          "kind": "optimize",
+          "confidence": 0.014648,
+          "escalate": 0.447778
+        },
+        {
+          "id": "h-auth-flow",
+          "ok": true,
+          "error": null,
+          "latencyMs": 342,
+          "kind": "explain_codebase",
+          "confidence": 0.76146,
+          "escalate": 0.368395
+        },
+        {
+          "id": "h-multitenant",
+          "ok": true,
+          "error": null,
+          "latencyMs": 415,
+          "kind": "design_build",
+          "confidence": 0.66853,
+          "escalate": 0.259558
+        },
+        {
+          "id": "h-leak",
+          "ok": true,
+          "error": null,
+          "latencyMs": 427,
+          "kind": "hard_debugging",
+          "confidence": 0.941764,
+          "escalate": 0.317836
+        },
+        {
+          "id": "h-jwt-review",
+          "ok": true,
+          "error": null,
+          "latencyMs": 441,
+          "kind": "security_review",
+          "confidence": 0.973732,
+          "escalate": 0.566983
+        },
+        {
+          "id": "h-py-to-go",
+          "ok": true,
+          "error": null,
+          "latencyMs": 362,
+          "kind": "refactor",
+          "confidence": 0.126756,
+          "escalate": 0.358005
+        },
+        {
+          "id": "h-sharding",
+          "ok": true,
+          "error": null,
+          "latencyMs": 446,
+          "kind": "design_build",
+          "confidence": 0.044483,
+          "escalate": 0.382439
+        },
+        {
+          "id": "h-ok",
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "kind": "continuation",
+          "confidence": 0.460764,
+          "escalate": 0.5
+        },
+        {
+          "id": "h-typo-readme",
+          "ok": true,
+          "error": null,
+          "latencyMs": 409,
+          "kind": "small_edit",
+          "confidence": 0.910259,
+          "escalate": 0.378909
+        }
+      ]
+    },
+    {
+      "variant": "kinds",
+      "set": "escalation",
+      "escalation": {
+        "economy": {
+          "threshold": 0.9,
+          "accuracy": 61.5,
+          "detected": 0,
+          "falseAlarms": 0
+        },
+        "balanced": {
+          "threshold": 0.8,
+          "accuracy": 92.3,
+          "detected": 80,
+          "falseAlarms": 0
+        },
+        "quality": {
+          "threshold": 0.7,
+          "accuracy": 84.6,
+          "detected": 80,
+          "falseAlarms": 12.5
+        }
+      },
+      "results": [
+        {
+          "id": "e-still-fails",
+          "ok": true,
+          "error": null,
+          "latencyMs": 367,
+          "kind": "bugfix",
+          "confidence": 0.964835,
+          "escalate": 0.834426
+        },
+        {
+          "id": "e-wrong-total",
+          "ok": true,
+          "error": null,
+          "latencyMs": 436,
+          "kind": "architecture",
+          "confidence": 0.09638,
+          "escalate": 0.477552
+        },
+        {
+          "id": "e-same-error",
+          "ok": true,
+          "error": null,
+          "latencyMs": 397,
+          "kind": "bugfix",
+          "confidence": 0.907578,
+          "escalate": 0.804578
+        },
+        {
+          "id": "e-broke-login",
+          "ok": true,
+          "error": null,
+          "latencyMs": 388,
+          "kind": "bugfix",
+          "confidence": 0.144153,
+          "escalate": 0.822731
+        },
+        {
+          "id": "e-not-asked",
+          "ok": true,
+          "error": null,
+          "latencyMs": 420,
+          "kind": "bugfix",
+          "confidence": 0.174031,
+          "escalate": 0.843528
+        },
+        {
+          "id": "e-thanks",
+          "ok": true,
+          "error": null,
+          "latencyMs": 413,
+          "kind": "design_build",
+          "confidence": 0.003371,
+          "escalate": 0.105485
+        },
+        {
+          "id": "e-next-task",
+          "ok": true,
+          "error": null,
+          "latencyMs": 376,
+          "kind": "small_edit",
+          "confidence": 0.031583,
+          "escalate": 0.514971
+        },
+        {
+          "id": "e-run-tests",
+          "ok": true,
+          "error": null,
+          "latencyMs": 369,
+          "kind": "feature",
+          "confidence": 0.092908,
+          "escalate": 0.577978
+        },
+        {
+          "id": "e-go-ahead",
+          "ok": true,
+          "error": null,
+          "latencyMs": 389,
+          "kind": "continuation",
+          "confidence": 0.460764,
+          "escalate": 0.5
+        },
+        {
+          "id": "e-first-report",
+          "ok": true,
+          "error": null,
+          "latencyMs": 370,
+          "kind": "bugfix",
+          "confidence": 0.994441,
+          "escalate": 0.751787
+        },
+        {
+          "id": "e-question",
+          "ok": true,
+          "error": null,
+          "latencyMs": 401,
+          "kind": "hard_debugging",
+          "confidence": 0.018746,
+          "escalate": 0.695008
+        },
+        {
+          "id": "e-commit",
+          "ok": true,
+          "error": null,
+          "latencyMs": 367,
+          "kind": "continuation",
+          "confidence": 0.53755,
+          "escalate": 0.319461
+        },
+        {
+          "id": "e-continue-after-fail",
+          "ok": true,
+          "error": null,
+          "latencyMs": 406,
+          "kind": "continuation",
+          "confidence": 0.842911,
+          "escalate": 0.555922
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "krun-router",
+  "version": "0.1.0",
+  "description": "Automatic per-turn model routing for Claude Code, Codex, OpenCode and Kimi Code, powered by Krun.",
+  "author": "Rafael Ferres",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelferres/krun-router.git"
+  },
+  "homepage": "https://github.com/rafaelferres/krun-router#readme",
+  "bugs": {
+    "url": "https://github.com/rafaelferres/krun-router/issues"
+  },
+  "bin": {
+    "krun-router": "bin/krun-router.mjs",
+    "krun-claude": "bin/krun-claude.mjs",
+    "krun-codex": "bin/krun-codex.mjs",
+    "krun-explain": "bin/krun-explain.mjs",
+    "krun-opencode": "bin/krun-opencode.mjs",
+    "krun-kimi": "bin/krun-kimi.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "test:live": "node --test \"test/live/*.test.mjs\"",
+    "prepublishOnly": "npm test"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    "README.md",
+    "LICENSE",
+    "eval/routing.jsonl",
+    "eval/families.json",
+    "eval/holdout.jsonl",
+    "eval/escalation.jsonl"
+  ],
+  "keywords": [
+    "krun",
+    "claude-code",
+    "codex",
+    "model-routing",
+    "llm-router",
+    "coding-agent",
+    "cli",
+    "opencode",
+    "kimi"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}
